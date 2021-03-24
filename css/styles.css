@@ -61,7 +61,6 @@ p {
 
 .flexbox {
   display: flex;
-  justify-content: space-between;
 }
 
 .flex {
@@ -124,8 +123,6 @@ p {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: solid 1px var(--card-border-color);
   font-weight: 500;
   font-size: 14px;
@@ -197,6 +194,10 @@ p {
 
 .list-text {
   font-weight: 500;
+}
+
+.indent {
+  margin-right: 30px;
 }
 
 .title-label {
