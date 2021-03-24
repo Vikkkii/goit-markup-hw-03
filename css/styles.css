@@ -170,6 +170,11 @@ p {
   display: block;
 }
 
+.padding-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .blue {
   color: var(--accent-color);
 }
@@ -191,17 +196,14 @@ p {
 }
 
 .list-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-weight: 500;
 }
 
 .title-label {
   padding-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.42;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
 }
@@ -224,7 +226,7 @@ p {
   align-items: center;
   text-align: center;
 
-  color: #ffffff;
+  color: var(--bg-portfo);
   cursor: pointer;
   background-color: var(--accent-color);
 }
@@ -235,7 +237,6 @@ p {
 
 .button-portfolio {
   min-width: 73px;
-  margin-bottom: 50px;
   padding: 6px 22px;
   font-weight: 500;
   line-height: 1.62;
@@ -248,6 +249,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .button-margin:not(:last-child) {
@@ -273,7 +275,6 @@ p {
 .hero {
   display: flex;
   align-items: center;
-  min-height: 100vh;
 }
 
 .section-studio {
@@ -281,16 +282,20 @@ p {
   padding-bottom: 200px;
 }
 
-.section-stud-port {
+.section-pad-top {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.section-padding-top-bott {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .sec-title {
   max-width: 600px;
 }
+
 .section-title {
-  padding-top: 94px;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -315,19 +320,19 @@ p {
 }
 
 .title-team {
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-bottom: 0;
+}
+
+.team-card .title-team {
+  margin-bottom: 10px;
 }
 
 .name {
   color: var(--title-color);
-}
-
-.profession-team {
-  font-weight: normal;
 }
 
 .dark-bg {
@@ -343,12 +348,7 @@ p {
   color: var(--dark-bg-text-color);
 }
 
-.bg-color-header {
-  background-color: var(--bg-portfo);
-}
-
 .contacts {
-  margin-top: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -374,6 +374,25 @@ img {
 
 .margin-footer {
   margin-bottom: 9px;
+}
+
+.margin-footer:last-child {
+  margin-bottom: 0;
+}
+
+.footer-web-studio {
+  font-family: var(--logo-font);
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+}
+
+address {
+  margin-top: 20px;
 }
 
 .list-item:last-child {
